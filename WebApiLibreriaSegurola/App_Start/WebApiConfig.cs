@@ -20,10 +20,7 @@ namespace WebApiLibreriaSegurola
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
-            config.Formatters.Clear();
-            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            config.Formatters.JsonFormatter.UseDataContractJsonSerializer = false;
+            
         }
     }
 }
