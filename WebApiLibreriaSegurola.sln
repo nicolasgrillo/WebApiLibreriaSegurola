@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiLibreriaSegurola", "WebApiLibreriaSegurola\WebApiLibreriaSegurola.csproj", "{ED19697A-F0E6-4D48-8468-635FBCB74D1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiLibreriaSegurola.DL", "..\WebApiLibreriaSegurola.DL\WebApiLibreriaSegurola.DL.csproj", "{67A4992C-417E-43BB-B80E-E217ED01D927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ED19697A-F0E6-4D48-8468-635FBCB74D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED19697A-F0E6-4D48-8468-635FBCB74D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED19697A-F0E6-4D48-8468-635FBCB74D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A4992C-417E-43BB-B80E-E217ED01D927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A4992C-417E-43BB-B80E-E217ED01D927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A4992C-417E-43BB-B80E-E217ED01D927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A4992C-417E-43BB-B80E-E217ED01D927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
