@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using WebApiLibreriaSegurola.DL.Entities;
-using WebApiLibreriaSegurola.DL.Mappers;
+using WebApiLibreriaSegurola.DL;
 
 namespace WebApiLibreriaSegurola.Controllers
 {
