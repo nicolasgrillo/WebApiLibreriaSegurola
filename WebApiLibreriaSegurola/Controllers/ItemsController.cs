@@ -11,12 +11,30 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using WebApiLibreriaSegurola.DL.Entities;
 using WebApiLibreriaSegurola.DL;
+using WebApiLibreriaSegurola.BL;
 
 namespace WebApiLibreriaSegurola.Controllers
 {
     public class ItemsController : ApiController
     {
         private LibreriaSegurolaContext db = new LibreriaSegurolaContext();
+
+        [Route("api/items/book/{isbn}")]
+        [ResponseType(typeof(Item))]
+        public IHttpActionResult GetBook(string isbn)
+        {
+            try
+            {
+                string URI = "https://www.casassaylorenzo.com/resultados.aspx?c=" + isbn + "&por=pal";
+                Item response = WebScraper.GetBook(URI);
+                return Ok(response);
+            }
+            catch
+            {
+                return InternalServerError();
+            }
+        }
+
 
         // GET: api/Items
         public IQueryable<Item> GetItems()
